@@ -3,9 +3,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>welcom</title>
+<title>welcome</title>
 </head>
 <body>
-	<h3>welcom JSP!</h3>
+	<h3>welcome JSP!</h3>
 </body>
 </html>
