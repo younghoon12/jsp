@@ -1,6 +1,7 @@
 package service;
 
 import java.util.Properties;
+import java.util.concurrent.ThreadLocalRandom;
 
 import com.mysql.cj.Session;
 
@@ -9,7 +10,7 @@ import dto.UserDto;
 
 public class UserService {
 	
-	INSTANCE;	
+	// INSTANCE;	
 	private UserDao dao = UserDao.getInstance();
 	
 	public String sendEmailCode(String email) {
@@ -31,7 +32,7 @@ public class UserService {
 		props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
 		
 		// gmail session 생성
-		Session gmailSession = Session.getInstance(props, new Authenticator(){
+		/* Session gmailSession = Session.getInstance(props, new Authenticator(){
 			@Override
 			protected javax.mail.PasswordAuthentication getPasswordAuthentication(){
 				return new PasswordAuthentication(sender, appPass);
@@ -74,5 +75,5 @@ public class UserService {
 	public void deleteUser(String uid) {
 		dao.deleteUser(uid);
 	}
-
+*/
 }
