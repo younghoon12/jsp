@@ -21,6 +21,7 @@
 		<input type="text" name="uid" placeholder="아이디 입력"/><br>
 		<input type="passward" name="pass" placeholder="비밀번호 입력"/><br>
 		<input type="submit" value="로그인"/><br>
+		<a href="/jboard/user/terms.do">회원가입</a>
 	</from>
 
 </body>
